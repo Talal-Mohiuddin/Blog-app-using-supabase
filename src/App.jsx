@@ -13,7 +13,6 @@ import {
 } from "./pages/index";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useAuth } from "./context/Context";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 const App = () => {
   const { login, getblogs } = useAuth();
@@ -21,7 +20,6 @@ const App = () => {
   return (
     <>
       <QueryClientProvider client={new QueryClient()}>
-        <ReactQueryDevtools initialIsOpen={false} />
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Applayout />}>
