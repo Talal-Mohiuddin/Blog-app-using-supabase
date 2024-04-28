@@ -18,8 +18,8 @@ const PostGrid = ({ showposts, type, isLoading }) => {
 
   return (
     <>
-      <h1 className="font-bold text-xl my-5 mx-10">{heading}</h1>
-      <div className="grid grid-cols-3 gap-5 m-[5%]">
+      <h1 className="font-bold text-center sm:text-left text-xl my-5 mx-10">{heading}</h1>
+      <div className="sm:grid sm:grid-cols-2 md:grid-cols-3 p-4 sm:p-0 max-w-[1200px] mx-auto gap-5 m-[5%]">
         {showposts.map((post) => (
           <Posts2 postobj={post} key={post.id} />
         ))}

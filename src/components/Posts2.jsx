@@ -5,10 +5,10 @@ const Posts2 = ({ postobj }) => {
   return (
     <Link
       to={`/category/${postobj.category}/${postobj.id}`}
-      className="max-w-[350px]"
+      className="w-full  md:max-w-[350px]"
     >
-      <div className="md:mb-0 mb-10">
-        <div className="w-ful">
+      <div className="md:mb-0 mb-10 w-full">
+        <div className="w-full">
           <img
             className="w-full rounded-tr-[2.8rem] rounded-bl-[2.8rem] rounded-lg"
             src={postobj.featured_image}
